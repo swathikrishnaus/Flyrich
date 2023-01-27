@@ -1,0 +1,340 @@
+body{
+    font-size: 13px;
+    font-family: 'Poppins';
+    background-color: #F8F1E9;
+    overflow-x: hidden;
+}
+
+
+
+
+/* -----------------common css start----------------- */
+
+.light-color{
+    color: #FDFBFB;
+}
+.subhead-color{
+    color: #A3886B;
+}
+.head-color{
+    color: #38303D;
+}
+.para-color{
+    color: #858181;
+}
+.flight{
+    font-size: 30px;
+    color: #A3886B;
+    transform: rotate(30deg);
+    margin-top: -8px;
+}
+.button-style{
+    background-color: #38303D;
+    color: #A3886B;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 0;
+}
+
+
+/* -----------------common css start----------------- */
+
+
+
+
+
+
+header{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),  url("../images/home.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+
+.navbar img{
+    width: 250px;
+    height: auto;
+}
+.navbar .nav-item .nav-link{
+    color: #F2EEEA;
+}
+.navbar .nav-item .nav-link:hover , .navbar .nav-item .nav-link.active , .navbar .nav-item .nav-link:focus{
+    font-weight: bold;
+    color: #F2EEEA;
+}
+.navbar .contact-btn{
+    background-color: #A3886B;
+    color: #F2EEEA;
+    padding: 10px 25px;
+    border-radius: 10px;
+}
+
+
+/* --------------------------home start-------------------------------- */
+
+.home{
+    padding-top: 200px;
+}
+.home h1{
+    font-size: 50px;
+    margin-top: 100px;
+   color: #F2EEEA;
+}
+.home button{
+    background-color: #A3886B;
+    color: #F2EEEA;
+    padding: 10px 25px;
+    border-radius: 10px;
+}
+
+
+/* --------------------------home end-------------------------------- */
+
+
+
+/* --------------------------about start-------------------------------- */
+
+.about{
+    background-color: #FFFAF4;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.about img{
+    width: 500px;
+    float: left;
+    display: block;
+    left: 0;
+    margin-left: auto;
+}
+.about p{
+    color: #939393;
+    text-align: justify;
+}
+.about .about-texts{
+    margin-top: 100px;
+}
+
+
+/* --------------------------about end-------------------------------- */
+
+
+
+/* --------------------------services start-------------------------------- */
+
+.services{
+    margin-top: 150px;
+    
+}
+.services a{
+    text-decoration: none;
+}
+.services .card{
+    padding: 5px;
+    border: 1px solid #A3886B;
+    background-color: transparent;
+    border-radius: 6px;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+}
+.services .card p{
+    text-align: justify;
+}
+.services .card img{
+    border-radius: 3px;
+    display: block;
+    margin: 0 auto;
+}
+.services .card a{
+    text-decoration: none;
+    margin: 0 auto;
+    display: block;
+    transition: 0.3s ease;
+}
+.services .card a:hover{
+    opacity: 0.7;
+    color: #A3886B;
+}
+.services .service-contents{
+    margin-top: 100px;
+}
+.services .more .service-card .card{
+    background-color: #A3886B;
+    margin-top: 30px;
+    color: #F8F1E9;
+    margin-bottom: 100px;
+}
+.services .bottom-margin{
+    margin-bottom: 100px;
+}
+.service-card{
+    height: 100%;
+    /* margin-bottom: 100px; */
+}
+
+/* --------------------------services end-------------------------------- */
+
+
+
+/* --------------------------blog start-------------------------------- */
+
+.blog{
+    margin-top: 150px;
+}
+.blog .blog-contents{
+    margin-top: 50px;
+}
+.blog  a{
+    text-decoration: none;
+}
+.blog img{
+    border-radius: 6px;
+}
+
+/* --------------------------blog end-------------------------------- */
+
+
+
+
+/* --------------------------testimonial start-------------------------------- */
+
+.testimonial{
+    margin-top: 150px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: url("../images/testimonial/f.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    /* height: 100vh; */
+}
+.testimonial .card{
+    background-color: #FFFAF4;
+    border: 1px solid #A3886B;
+    border-radius: 6px;
+    margin: 0 auto;
+    width: 60%;
+    padding: 20px;
+}
+.testimonial .card img{
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin: 0 auto;
+    display: block;
+    margin-top: -100px;
+    border: 2px solid #A3886B;
+}
+.testimonial .client-box{
+    margin-top: 50px;
+}
+.testimonial .client-box i{
+    font-size: 15px;
+    color: #A3886B;
+}
+.testimonial .carousel-inner {
+    padding-top: 86px;
+}
+
+/* --------------------------testimonial end-------------------------------- */
+
+
+
+/* --------------------------contact start-------------------------------- */
+
+.contact{
+    margin-top: 150px;
+}
+.contact img{
+    margin: 0 auto;
+    display: block;
+    border-radius: 6px;
+    z-index: -1;
+}
+.contact .contact-contents{
+    margin-top: 50px;
+}
+.contact  form{
+    margin: 0 auto;
+    width: 450px;
+    padding: 50px 25px;
+    background-color: white;
+    border-radius: 6px;
+    border: 0;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
+.contact  form input::placeholder, .contact  form textarea::placeholder{
+    font-size: 13px;
+}
+.contact  form input, .contact  form textarea{
+    border: 0;
+    background-color: #F4F3F1;
+    padding: 15px;
+    border-radius: 3px;
+}
+.contact .contact-details{
+    background-color: #FFFAF4;
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    margin-top: -30px;
+    position: relative;
+    z-index: 1000;
+}
+.contact .contact-details a{
+    text-decoration: none;
+    margin-top: 10px;
+}
+.contact .contact-details i{
+    color: #A3886B;
+    font-size: 15px;
+}
+.contact .contact-contents ul li{
+    list-style: none;
+}
+.contact .social-icons i{
+    color: #38303D!important;
+}
+
+/* --------------------------contact end-------------------------------- */
+
+
+
+/* --------------------------footer start-------------------------------- */
+
+.footer{
+    margin-top: 150px;
+    background-color: #38303D;
+    padding: 50px;
+}
+.footer .icon-bg i{
+    font-size: 16px;
+    color: #38303D;
+}
+.footer a{
+    text-decoration: none;
+}
+.footer .icon-bg{
+    background-color: #D9D9D9;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 7px;
+}
+.footer ul li{
+    list-style: none;
+    
+}
+.footer ul li a{
+    color: #FDFBFB;
+}
+
+/* --------------------------footer end-------------------------------- */
