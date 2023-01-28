@@ -34,6 +34,12 @@ body{
     padding: 10px 20px;
     border-radius: 10px;
     border: 0;
+    transition: 0.5s ease;
+    font-weight: bold;
+}
+.button-style:hover{
+    background-color: #A3886B;
+    color: #38303D;
 }
 
 
@@ -52,10 +58,6 @@ header{
     width: 100%;
     height: 100vh;
 }
-
-
-
-
 .navbar img{
     width: 250px;
     height: auto;
@@ -72,7 +74,92 @@ header{
     color: #F2EEEA;
     padding: 10px 25px;
     border-radius: 10px;
+    transition: 0.5s ease;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
+.navbar .contact-btn:hover{
+    background-color: #38303D;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+.nav-shadow{
+    background-color: #ddcbb8;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+@media(max-width: 991px){
+    .navbar img{
+        width: 200px;
+        height: auto;
+    }
+    .navbar .navbar-collapse{
+        background-color: #c79f74!important;
+        padding: 20px!important;
+    }
+}
+
+
+
+
+
+/* --------------------toggle button css start----------------------- */
+.navbar-toggler {
+    border: 0 !important;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: 0 !important;
+}
+.toggler-icon{
+    /* width: 30px;
+    height: 3px; */
+    background-color: #FDFBFB;
+    display: block;
+    transition: all 0.2s;
+}
+.length-1, .length-3{
+    width: 30px;
+    height: 3px;
+}
+.length-2{
+    width: 20px;
+    height: 3px;
+    margin-left: 10px;
+}
+.middle-bar{
+    /* margin: 5px auto; */
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.navbar-toggler .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
+.navbar-toggler .middle-bar {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.navbar-toggler .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+}
+.navbar-toggler.collapsed .top-bar {
+    transform: rotate(0);
+}
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.navbar-toggler.collapsed .bottom-bar {
+    transform: rotate(0);
+}
+.navbar-toggler.collapsed .toggler-icon {
+    background-color: #FDFBFB;
+}
+
+/* --------------------toggle button css end----------------------- */
 
 
 /* --------------------------home start-------------------------------- */
@@ -90,6 +177,22 @@ header{
     color: #F2EEEA;
     padding: 10px 25px;
     border-radius: 10px;
+    transition: 0.5s ease;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.home button:hover{
+    background-color: #38303D;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    color: #F2EEEA;
+}
+@media(max-width: 991px){
+    .home{
+        padding: 10px;
+    }
+    .home h1{
+        font-size: 40px;
+        margin-top: 250px;
+    }
 }
 
 
@@ -97,15 +200,19 @@ header{
 
 
 
+
 /* --------------------------about start-------------------------------- */
 
 .about{
-    background-color: #FFFAF4;
+    background: url("../images/testimonial/bg.png");
+    /* background-color: #FFFAF4; */
     padding-top: 100px;
     padding-bottom: 100px;
+    background-repeat: round;
 }
+
 .about img{
-    width: 500px;
+    width: 80%;
     float: left;
     display: block;
     left: 0;
@@ -116,7 +223,21 @@ header{
     text-align: justify;
 }
 .about .about-texts{
-    margin-top: 100px;
+    margin: 100px 150px 100px 100px;
+}
+@media(max-width: 991px){
+    .about{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .about img{
+        width: 100%;
+    }
+    .about .about-texts{
+        margin: 0 auto;
+        padding: 10px;
+        margin-top: 10px;
+    }
 }
 
 
@@ -168,6 +289,7 @@ header{
     margin-top: 30px;
     color: #F8F1E9;
     margin-bottom: 100px;
+    transition: 0.5s ease;
 }
 .services .bottom-margin{
     margin-bottom: 100px;
@@ -176,6 +298,50 @@ header{
     height: 100%;
     /* margin-bottom: 100px; */
 }
+.float {
+    display: inline-block;
+    transition-duration: 0.3s;
+    transition-property: transform;
+    -webkit-tap-highlight-color: transparent;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px transparent;
+  }
+  .float:hover {
+    transform: translateY(-15px);
+  }
+  .float:hover .card{
+    background-color: #f0eae3;
+  }
+  .float:hover a{
+    color: #ca9760;
+  }
+  .float:hover p{
+    color: #494949;
+  }
+  @media(max-width: 991px){
+    .services{
+        padding: 10px;
+        margin-top: 50px;
+    }
+    .services .more .service-card .card{
+        margin: 0 auto;
+        display: block;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .services .card{
+        height: auto;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .services .bottom-margin{
+        margin-bottom: 30px;
+    }
+    .services .service-contents{
+        margin-top: 50px;
+    }
+  }
+
 
 /* --------------------------services end-------------------------------- */
 
@@ -194,6 +360,37 @@ header{
 }
 .blog img{
     border-radius: 6px;
+    transition: 0.3s ease;
+}
+.blog .blog-img-details img:hover{
+    opacity: 0.7;
+}
+.blog .view-more{
+    transition: 0.3s ease;
+}
+ .blog .view-more:hover{
+    opacity: 0.7;
+    color: #b39678;
+ }
+@media(max-width: 991px){
+    .blog{
+        padding: 10px;
+        margin-top: 100px;
+    }
+    .blog .blog-contents{
+        margin-top: 10px;
+    }
+    .blog img{
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+    .blog .blog-img-details{
+        text-align: center;
+    }
+    .blog  button{
+        margin: 0 auto;
+        display: block;
+    }
 }
 
 /* --------------------------blog end-------------------------------- */
@@ -201,10 +398,47 @@ header{
 
 
 
+/* --------------------------youtube start-------------------------------- */
+
+.youtube{
+    margin-top: 150px;
+    background-color: #eee8e1;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.youtube iframe{
+    border-radius: 6px;
+    width: 350px;
+    height: 200px;
+    margin: 0 auto;
+    display: block;
+}
+.youtube .videos{
+    margin-top: 50px;
+}
+@media(max-width: 991px){
+    .youtube{
+        padding: 50px 10px;
+    }
+    .youtube iframe{
+        width: auto;
+        height: auto;
+        margin-top: 10px;
+    }
+    .youtube .videos{
+        margin-top: 30px;
+    }
+}
+
+/* --------------------------youtube end-------------------------------- */
+
+
+
+
 /* --------------------------testimonial start-------------------------------- */
 
 .testimonial{
-    margin-top: 150px;
+    /* margin-top: 150px; */
     padding-top: 100px;
     padding-bottom: 100px;
     background: url("../images/testimonial/f.png");
@@ -222,6 +456,9 @@ header{
     width: 60%;
     padding: 20px;
 }
+.testimonial .carousel-inner{
+    overflow: visible;
+}
 .testimonial .card img{
     border-radius: 50%;
     height: 150px;
@@ -234,12 +471,38 @@ header{
 .testimonial .client-box{
     margin-top: 50px;
 }
-.testimonial .client-box i{
+.testimonial .client-box  i{
     font-size: 15px;
     color: #A3886B;
 }
+.testimonial .carousel-control-prev i, .testimonial .carousel-control-next i{
+    color: #A3886B;
+    margin-top: 50px;
+    font-size: 30px;
+}
+.testimonial .carousel-control-prev i:hover, .testimonial .carousel-control-next i:hover{
+    opacity: 0.3s ease;
+}
 .testimonial .carousel-inner {
     padding-top: 86px;
+}
+.testimonial .carousel-control-prev-icon{
+    background-color: red;
+}
+@media(max-width: 991px){
+    .testimonial{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 10px;
+        padding-left: 10px;
+    }
+    .testimonial .card{
+        width: 100%;
+        padding: 10px;
+    }
+    .testimonial .client-box{
+        margin-top: 20px;
+    }
 }
 
 /* --------------------------testimonial end-------------------------------- */
@@ -292,16 +555,39 @@ header{
 .contact .contact-details a{
     text-decoration: none;
     margin-top: 10px;
+    transition: 0.3s ease;
+}
+.contact .contact-details a:hover{
+    color: #A3886B;
 }
 .contact .contact-details i{
     color: #A3886B;
     font-size: 15px;
+    transition: 0.3s ease;
 }
 .contact .contact-contents ul li{
     list-style: none;
 }
 .contact .social-icons i{
     color: #38303D!important;
+}
+.contact .social-icons i:hover{
+    color: #A3886B!important;
+}
+@media(max-width: 991px){
+    .contact {
+        padding: 10px;
+        margin-top: 40px;
+    }
+    .contact  form{
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        margin-top: 50px;
+    }
+    .contact .contact-contents{
+        margin-top: 20px;
+    }
 }
 
 /* --------------------------contact end-------------------------------- */
@@ -313,14 +599,31 @@ header{
 .footer{
     margin-top: 150px;
     background-color: #38303D;
-    padding: 50px;
+    padding-bottom: 30px;
+}
+.footer .footer-details{
+    padding-top: 50px;
+    padding-top: 30px;
 }
 .footer .icon-bg i{
     font-size: 16px;
     color: #38303D;
+    transition: 0.3s ease;
+}
+.footer .icon-bg:hover{
+    background-color: #38303D;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+.footer .icon-bg:hover i{
+    color: #A3886B;
 }
 .footer a{
     text-decoration: none;
+}
+.footer img{
+    object-fit: cover;
+    width: 250px;
+    height: auto;
 }
 .footer .icon-bg{
     background-color: #D9D9D9;
@@ -329,12 +632,46 @@ header{
     border-radius: 50%;
     padding: 7px;
 }
+.footer .icon-bg .fb{
+    margin-left: 3px;
+}
+.footer .icon-bg .insta{
+    margin-left: 1px;
+}
+.footer .icon-bg .twi{
+    margin-left: 1px;
+}
 .footer ul li{
     list-style: none;
-    
+    margin-bottom: 5px;
 }
 .footer ul li a{
     color: #FDFBFB;
+    transition: 0.3s ease;
+}
+.footer ul{
+    margin-top: 45px;
+}
+.footer .footer-links a:hover{
+    opacity: 0.7;
+}
+.footer hr{
+    color: #A3886B;
+}
+.footer .powered-by a{
+    color: #A3886B;
+    transition: 0.3s ease;
+}
+.footer .powered-by a:hover{
+    color: #ddcbb8;
+}
+@media(max-width: 991px){
+    .footer{
+        margin-top: 100px;
+    }
+    .footer ul{
+        margin-top: 20px;
+    }
 }
 
 /* --------------------------footer end-------------------------------- */
