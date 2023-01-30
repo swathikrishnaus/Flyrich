@@ -719,7 +719,7 @@ header{
 .about-us .about-us-para{
     color: #d8d8d8;
 }
-button{
+.home button{
     background-color: #A3886B;
     color: #F2EEEA;
     padding: 10px 25px;
@@ -735,3 +735,101 @@ button{
 
 /* --------------------------about-home end-------------------------------- */
 
+
+
+/* --------------------------contact-us start-------------------------------- */
+
+/* .contact-us{
+    padding-top: 200px;
+} */
+.contact-us .contact-us-bg .right-bg{
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),  url("../images/contact/contact-us/contact-us-bg.jpg");
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 200px;
+}
+.contact-us .right-bg-contents{
+    margin: 100px;
+}
+.contact-us .contact-us-bg .left-bg{
+    /* background-color: #e9e5d9; */
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),  url("../images/contact/contact-us/contact-us-bg.jpg");
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    padding-top: 200px;
+}
+/* .contact-us .left-bg-contents{
+    margin: 0px;
+} */
+.contact-us .padding-0{
+    padding-right:0;
+    padding-left:0;
+}
+.contact-us .contact-us-texts{
+    color: #d1cfcd;
+    width: 60%;
+}
+.contact-us form{
+    background-color: rgba(180, 128, 80, 0.336);
+    width: 500px;
+    border: 0;
+    border-radius: 20px;
+    padding: 50px 30px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 50px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+}
+.contact-us form input::placeholder, .contact-us form textarea::placeholder{
+    font-size: 13px;
+    color: #ddcbb8;
+}
+.contact-us form input, .contact-us form textarea{
+    border-bottom: 1px solid #b1a496;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 0px;
+}
+.contact-us .contact-us-btn{
+    background-color: #A3886B;
+    color: #F2EEEA;
+    padding: 15px 35px;
+    border: 0;
+    border-radius: 10px;
+    transition: 0.5s ease;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.contact-us .contact-us-btn:hover{
+    background-color: #38303D;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    color: #F2EEEA;
+}
+@media(max-width: 991px){
+    .contact-us form{
+        width: 300px;
+        height: 100%;
+        margin: 20px;
+        margin: 0 auto;
+        display: block;
+    }
+    .contact-us .contact-us-bg .left-bg{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        height: 100%;
+    }
+    .contact-us .contact-us-texts{
+        width: 100%;
+    }
+}
+
+
+/* --------------------------contact-us start-------------------------------- */
