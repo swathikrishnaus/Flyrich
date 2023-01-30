@@ -116,8 +116,6 @@ header{
 
 
 
-
-
 /* --------------------toggle button css start----------------------- */
 .navbar-toggler {
     border: 0 !important;
@@ -336,6 +334,12 @@ header{
   .float:hover p{
     color: #494949;
   }
+  .services .study .service-card{
+    margin-top: -22px!important;
+  }
+  .service-top{
+    margin-top: 150px!important;
+  }
   @media(max-width: 991px){
     .services{
         padding: 10px;
@@ -358,6 +362,9 @@ header{
     .services .service-contents{
         margin-top: 50px;
     }
+    .services .study .service-card{
+        margin-top: auto!important;
+      }
   }
 
 
@@ -693,3 +700,38 @@ header{
 }
 
 /* --------------------------footer end-------------------------------- */
+
+
+
+/* --------------------------about-home start-------------------------------- */
+
+.about-home{
+    padding-top: 200px;
+}
+.about-us-bg{
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),  url("../images/about/about-us/2.jpg");
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about-us .about-us-para{
+    color: #d8d8d8;
+}
+button{
+    background-color: #A3886B;
+    color: #F2EEEA;
+    padding: 10px 25px;
+    border-radius: 10px;
+    transition: 0.5s ease;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.home button:hover{
+    background-color: #38303D;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    color: #F2EEEA;
+}
+
+/* --------------------------about-home end-------------------------------- */
+
