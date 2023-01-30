@@ -833,3 +833,54 @@ header{
 
 
 /* --------------------------contact-us start-------------------------------- */
+
+
+/* --------------------------our-blog start-------------------------------- */
+
+    .our-blog{
+        margin-top: 200px;
+    }
+    .our-blog .blog-details img{
+        border-radius: 10px;
+        transition: 0.3s ease;
+        object-fit: fill;
+        width: 250px;
+        height: 160px;
+    }
+    .our-blog .blog-details img:hover{
+        opacity: 0.7;
+    }
+    .our-blog .blog-details p{
+        text-align: justify;
+    }
+    .our-blog .desription{
+        width: 80%;
+    }
+    .our-blog .blog-details .view-more{
+        transition: 0.3s ease;
+    }
+    .our-blog .blog-details .view-more:hover{
+        opacity: 0.7;
+        color: #b39678;
+    }
+    .our-blog .top-margin{
+        margin: 0 auto;
+        margin-top: 60px;
+    }
+    @media(max-width: 991px){
+        .our-blog{
+            padding: 10px;
+        }
+        .our-blog .desription{
+            width: 100%;
+        }
+        .our-blog .blog-details img{
+            width: auto;
+            height: auto;
+        }
+        .our-blog{
+            margin-top: 150px;
+        }
+    }
+
+/* --------------------------our-blog start-------------------------------- */
