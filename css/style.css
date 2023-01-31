@@ -703,18 +703,19 @@ header{
 
 
 
-/* --------------------------about-home start-------------------------------- */
+/* --------------------------about-us start-------------------------------- */
 
 .about-home{
     padding-top: 200px;
 }
 .about-us-bg{
     background:  url("../images/about/about-us/bg.png");
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
+    padding-bottom: 100px;
 }
 .about-us .about-us-para{
     color: #424242;
@@ -742,24 +743,70 @@ header{
     width: 500px;
     height: 320px;
     border-radius: 6px;
+    margin-top: 80px;
 }
 .about-us .about-texts{
     margin-top: 50px;
 }
 .about-us .about-us-description{
    color: #424242;;
+   text-align: justify;
 }
-.hover-switch > img {
-    position: absolute;
+
+  .about-us .about-services i{
+    font-size: 13px;
+    margin-top: 5px;
+    color: #ca9760;
   }
-  .hover-switch > img:last-of-type {
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
-    -moz-transition: opacity 0.5s ease-in-out;
-    -webkit-transition: opacity 0.5s ease-in-out;
+  .about-us .about-services a{
+    color: #858181;
+    transition: 0.3s ease;
   }
-  .hover-switch:hover > img:last-of-type {
-    opacity: 0;
+  .about-us .about-services a:hover{
+    opacity: 0.7;
+  }
+  .about-us .mission-vision{
+    text-align: justify;
+    margin-top: 100px;
+  }
+  .about-us .mission-vision img{
+    border-radius: 6px;
+    width: 550px;
+    height: 350px;
+    object-fit: fill;
+  }
+  .about-us .explanation{
+    margin-top: 50px;
+  }
+  @media(max-width: 991px){
+    .about-us{
+        padding: 10px;
+    }
+    .about-us .about-us-img{
+        margin-top: 30px;
+    }
+    .about-us .about-us-img{
+        width: auto;
+        height: auto;
+    }
+    .about-us .mission-vision img{
+        width: auto;
+        height: auto;
+    }
+    .about-us .mission-vision{
+        margin-top: 50px;
+      }
+      .about-home{
+        padding-top: 150px;
+    }
+    .about-us-img img{
+        width: auto;
+        height: auto;
+        margin-top: 50px;
+    }
+    .about-texts h5{
+        margin-bottom: 20px;
+    }
   }
   
 
