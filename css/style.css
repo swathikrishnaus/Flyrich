@@ -880,9 +880,6 @@ header{
     border-radius: 6px;
 }
 @media(max-width: 991px){
-    .contact-us{
-        padding: 10px;
-    }
     .contact-us form{
         width: 300px;
         height: 100%;
