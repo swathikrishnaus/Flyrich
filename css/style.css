@@ -709,7 +709,7 @@ header{
     padding-top: 200px;
 }
 .about-us-bg{
-    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),  url("../images/about/about-us/2.jpg");
+    background:  url("../images/about/about-us/bg.png");
     height: 100vh;
     width: 100%;
     background-position: center;
@@ -717,7 +717,7 @@ header{
     background-size: cover;
 }
 .about-us .about-us-para{
-    color: #d8d8d8;
+    color: #424242;
 }
 .home button{
     background-color: #A3886B;
@@ -732,6 +732,36 @@ header{
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
     color: #F2EEEA;
 }
+.no-margin{
+    margin-top: 0;
+}
+.about-us .about-us-img{
+    margin-top: 50px;
+}
+.about-us-img img{
+    width: 500px;
+    height: 320px;
+    border-radius: 6px;
+}
+.about-us .about-texts{
+    margin-top: 50px;
+}
+.about-us .about-us-description{
+   color: #424242;;
+}
+.hover-switch > img {
+    position: absolute;
+  }
+  .hover-switch > img:last-of-type {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -webkit-transition: opacity 0.5s ease-in-out;
+  }
+  .hover-switch:hover > img:last-of-type {
+    opacity: 0;
+  }
+  
 
 /* --------------------------about-home end-------------------------------- */
 
@@ -811,7 +841,48 @@ header{
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
     color: #F2EEEA;
 }
+.contact-us .contact-icons .icon-bg{
+    background-color: rgba(180, 128, 80, 0.336);
+    border-radius: 50px;
+    height: 30px;
+    width: 30px;
+    transition: 0.3s ease;
+    padding: 6px;
+}
+.contact-us .contact-icons .icon-bg:hover{
+    opacity: 0.7;
+}
+.contact-us .contact-icons .icon-bg .facebook{
+    margin-left: 3px;
+}
+.contact-us .contact-icons .icon-bg .instagram{
+    margin-left: 2px;
+}
+.contact-us .contact-icons .icon-bg i{
+    color: #ececec;
+    font-size: 15px;
+}
+.contact-us .map-details{
+    margin-top: 50px;
+}
+.contact-us .map-details iframe{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 6px;
+}
+.contact-us .map-details i{
+    font-size: 16px;
+    color: #b39678;
+}
+.contact-us .map-details p, a{
+    margin-top: 4px;
+}
+.contact-us .contact-img{
+    border-radius: 6px;
+}
 @media(max-width: 991px){
+    .contact-us{
+        padding: 10px;
+    }
     .contact-us form{
         width: 300px;
         height: 100%;
@@ -828,6 +899,16 @@ header{
     }
     .contact-us .contact-us-texts{
         width: 100%;
+    }
+    .contact-us .map-details iframe{
+        height: auto;
+        width: auto;
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 20px;
+    }
+    .contact-us-details{
+        flex-wrap: wrap;
     }
 }
 
